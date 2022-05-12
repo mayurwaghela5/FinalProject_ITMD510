@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="admin_view_stackpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdminLoginController">
+   <children>
+      <ImageView fitHeight="423.0" fitWidth="621.0">
+         <image>
+            <Image url="@../../images/01-img.png" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="admin_view_pane" prefHeight="510.0" prefWidth="610.0">
+         <children>
+            <Label layoutX="148.0" layoutY="131.0" style="-fx-background-color: #000000;" text="USERNAME" textFill="#f8f8f8">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <Label layoutX="148.0" layoutY="188.0" style="-fx-background-color: #000000;" text="PASSWORD" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+            <TextField fx:id="txtAdminUsername" layoutX="254.0" layoutY="127.0" />
+            <PasswordField fx:id="txtAdminPassword" layoutX="254.0" layoutY="184.0" />
+            <Button layoutX="359.0" layoutY="226.0" mnemonicParsing="false" onAction="#onAdminLogin" text="LOGIN" />
+            <Button layoutX="24.0" layoutY="344.0" mnemonicParsing="false" onAction="#onAdminBackButton" text="GO BACK" />
+            <Label layoutX="205.0" layoutY="307.0" text="New User? Register as Admin" textFill="WHITE" />
+            <Button layoutX="359.0" layoutY="324.0" mnemonicParsing="false" onAction="#onAdminRegister" text="Register" />
+            <Label fx:id="lblError" layoutX="253.0" layoutY="267.0" prefHeight="26.0" prefWidth="161.0" textFill="#ff0101">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label layoutX="164.0" layoutY="20.0" prefHeight="39.0" prefWidth="282.0" text="ADMIN LOGIN/REGISTER PAGE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

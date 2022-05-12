@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackepane_customerpageview_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CustomerPageController">
+	<children>
+      <ImageView fitHeight="520.0" fitWidth="619.0">
+         <image>
+            <Image url="@../../images/01-img.png" />
+         </image>
+      </ImageView>
+		<AnchorPane fx:id="customer_page_pane" prefHeight="500.0" prefWidth="600.0">
+			<!-- TODO Add Nodes -->
+			<children>
+				<Pane fx:id="reservation_pane" layoutX="31.0" layoutY="147.0" onMouseClicked="#reservationClicked" prefHeight="47.0" prefWidth="200.0" style="-fx-background-color: #CCC7CF;">
+					<children>
+						<Label layoutX="13.0" layoutY="14.0" text="BOOK CONCERT TICKET">
+							<font>
+								<Font name="System Bold" size="16.0" />
+							</font>
+						</Label>
+					</children>
+				</Pane>
+				<Pane fx:id="customer_manage_profile_pane" layoutX="31.0" layoutY="208.0" onMouseClicked="#customermanageprofileClicked" prefHeight="47.0" prefWidth="200.0" style="-fx-background-color: #ccc7cf;">
+					<children>
+						<Label layoutX="13.0" layoutY="14.0" text="MANAGE YOUR PROFILE">
+							<font>
+								<Font name="System Bold" size="16.0" />
+							</font>
+						</Label>
+					</children>
+				</Pane>
+				<Pane fx:id="customer_page_logout_pane" layoutX="31.0" layoutY="338.0" onMouseClicked="#customerpagelogoutClicked" prefHeight="47.0" prefWidth="200.0" style="-fx-background-color: #ccc7cf;">
+					<children>
+						<Label layoutX="67.0" layoutY="14.0" text="LOG OUT">
+							<font>
+								<Font name="System Bold" size="16.0" />
+							</font>
+						</Label>
+					</children>
+				</Pane>
+            <Pane fx:id="availableticket_pane" layoutX="31.0" layoutY="272.0" onMouseClicked="#availableTicketClicked" prefHeight="47.0" prefWidth="200.0" style="-fx-background-color: #ccc7cf;">
+               <children>
+                  <Label layoutX="42.0" layoutY="14.0" text="CHECK TICKETS">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Label layoutX="160.0" layoutY="25.0" prefHeight="47.0" prefWidth="311.0" text="CHOOSE CUSTOMER PREFERENCE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+			</children>
+		</AnchorPane>
+	</children>
+</StackPane>

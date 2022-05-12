@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackepane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="610.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdminPageController">
+   <children>
+      <AnchorPane fx:id="admin_page_pane" prefHeight="410.0" prefWidth="610.0">
+         <children>
+            <ImageView fitHeight="418.0" fitWidth="615.0">
+               <image>
+                  <Image url="@../../images/01-img.png" />
+               </image>
+            </ImageView>
+            <Pane fx:id="reservation_pane" layoutX="53.0" layoutY="156.0" onMouseClicked="#reservationClicked" prefHeight="53.0" prefWidth="210.0" style="-fx-background-color: #CCC7CF;">
+               <children>
+                  <Label layoutX="23.0" prefHeight="53.0" prefWidth="187.0" text="TICKET MANAGEMENT">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane fx:id="manage_profile_pane" layoutX="53.0" layoutY="231.0" onMouseClicked="#manageprofileClicked" prefHeight="53.0" prefWidth="210.0" style="-fx-background-color: #CCC7CF;">
+               <children>
+                  <Label layoutX="12.0" onMouseClicked="#manageprofileClicked" prefHeight="53.0" prefWidth="187.0" text="MANAGE ADMIN PROFILE">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Pane fx:id="admin_page_logout_pane" layoutX="462.0" layoutY="346.0" onMouseClicked="#adminpagelogoutClicked" prefHeight="38.0" prefWidth="115.0" style="-fx-background-color: #CCC7CF;">
+               <children>
+                  <Label layoutX="16.0" layoutY="1.0" prefHeight="36.0" prefWidth="83.0" text="LOGOUT">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Label layoutX="220.0" layoutY="49.0" prefHeight="17.0" prefWidth="175.0" text="ADMIN PORTAL">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Pane fx:id="ticket_booking_pane" layoutX="53.0" layoutY="302.0" onMouseClicked="#viewallbookingsClicked" prefHeight="53.0" prefWidth="210.0" style="-fx-background-color: #ccc7cf;">
+               <children>
+                  <Label layoutX="17.0" layoutY="11.0" prefHeight="30.0" prefWidth="175.0" text="VIEW ALL BOOKINGS">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

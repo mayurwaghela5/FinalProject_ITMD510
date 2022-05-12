@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="home_pane" prefHeight="410.0" prefWidth="610.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.HomeScreenController">
+   <children>
+      <ImageView fitHeight="510.0" fitWidth="615.0" layoutY="-3.0">
+         <image>
+            <Image url="@../../images/01-img.png" />
+         </image>
+      </ImageView>
+      <Pane fx:id="home_customer_pane" layoutX="41.0" layoutY="196.0" onMouseClicked="#customerClicked" prefHeight="56.0" prefWidth="200.0" style="-fx-background-color: #CCC7CF;">
+         <children>
+            <Label layoutX="36.0" layoutY="4.0" prefHeight="48.0" prefWidth="150.0" text="  CUSTOMER" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="home_admin_pane" layoutX="41.0" layoutY="274.0" onMouseClicked="#adminClicked" prefHeight="56.0" prefWidth="200.0" style="-fx-background-color: #CCC7CF;">
+         <children>
+            <Label layoutX="43.0" layoutY="4.0" prefHeight="48.0" prefWidth="150.0" text="        ADMIN">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane fx:id="home_exit_pane" layoutX="453.0" layoutY="453.0" onMouseClicked="#exitClicked" prefHeight="40.0" prefWidth="136.0" style="-fx-background-color: #CCC7CF;">
+         <children>
+            <Label layoutY="11.0" text="CLOSE APPLICATION">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <ImageView fitHeight="74.0" fitWidth="339.0" layoutX="145.0" layoutY="28.0">
+         <image>
+            <Image url="@../../images/imglogo1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackpane_custavailablerooms" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CustomerAvailableTicketController">
+	<children>
+      <ImageView fitHeight="512.0" fitWidth="615.0">
+         <image>
+            <Image url="@../../images/01-img.png" />
+         </image>
+      </ImageView>
+		<AnchorPane prefHeight="500.0" prefWidth="600.0">
+			<children>
+				<Button layoutX="54.0" layoutY="446.0" mnemonicParsing="false" onAction="#onCustomerAvaibleRoomBack" prefHeight="27.0" prefWidth="75.0" text="Back">
+					<font>
+						<Font name="System Bold" size="13.0" />
+					</font>
+				</Button>
+				<Button layoutX="501.0" layoutY="446.0" mnemonicParsing="false" onAction="#onCustomerAvaibleRoomExit" prefHeight="27.0" prefWidth="75.0" text="Exit">
+					<font>
+						<Font name="System Bold" size="13.0" />
+					</font>
+				</Button>
+				<TableView fx:id="tblRooms" layoutX="31.0" layoutY="75.0" prefHeight="350.0" prefWidth="539.0">
+					<columns>
+						<TableColumn fx:id="ConcertId" prefWidth="60.0" text="ConcertId" />
+						<TableColumn fx:id="ConcertType" prefWidth="79.0" text="Artist Name" />
+						<TableColumn fx:id="ConcertNumber" prefWidth="91.0" text="ConcertNumber" />
+						<TableColumn fx:id="numberOfPeople" prefWidth="101.0" text="Number of People" />
+						<TableColumn fx:id="ConcertTicketPrice" prefWidth="48.0" text="Price" />
+						<TableColumn fx:id="TicketStatus" prefWidth="77.0" text="Ticket Status" />
+                  <TableColumn fx:id="ConcertDate" prefWidth="82.0" text="Concert date" />
+					</columns>
+				</TableView>
+            <Label layoutX="200.0" layoutY="24.0" prefHeight="33.0" prefWidth="171.0" text="BOOKINGS INFORMATION">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+			</children>
+		</AnchorPane>
+	</children>
+</StackPane>

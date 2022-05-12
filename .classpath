@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.fx.ide.jdt.core.JAVAFX_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/Home"/>
+	<classpathentry kind="lib" path="/Users/mayurwaghela/Documents/Spring 2022/ITMD 510/workspace/FinalProject_ITMD510/libs/mysql-connector-java-8.0.28.jar"/>
+	<classpathentry kind="lib" path="/Users/mayurwaghela/Documents/Spring 2022/ITMD 510/workspace/FinalProject_ITMD510/libs/jfoenix-8.0.8.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

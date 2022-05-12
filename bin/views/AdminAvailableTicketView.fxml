@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackpane_availabletickets" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdminAvailableTicketController">
+	<children>
+		<AnchorPane prefHeight="500.0" prefWidth="730.0">
+			<children>
+            <ImageView fitHeight="516.0" fitWidth="917.0">
+               <image>
+                  <Image url="@../../images/01-img.png" />
+               </image>
+            </ImageView>
+				<TableView fx:id="tblViewTickets" layoutX="388.0" layoutY="50.0" prefHeight="400.0" prefWidth="505.0" style="-fx-background-color: #CCC7CF;">
+					<columns>
+						<TableColumn fx:id="ConcertId" prefWidth="66.0" text="Concert Id" />
+						<TableColumn fx:id="ConcertType" prefWidth="84.0" text="Artist Name" />
+						<TableColumn fx:id="ConcertNumber" minWidth="0.0" prefWidth="96.0" text="Concert Number" />
+						<TableColumn fx:id="numberOfPeople" minWidth="4.0" prefWidth="98.0" text="Number of People" />
+						<TableColumn fx:id="ConcertTicketPrice" minWidth="0.0" prefWidth="73.0" text="Ticket Price" />
+						<TableColumn fx:id="TicketStatus" minWidth="0.0" prefWidth="86.0" text="Tickets Status" />
+					</columns>
+				</TableView>
+				<Pane layoutX="14.0" layoutY="82.0" prefHeight="190.0" prefWidth="279.0" style="-fx-border-width: 15; -fx-background-color: #ccc;">
+					<effect>
+						<Blend />
+					</effect>
+					<children>
+						<TextField fx:id="txtSearch" layoutX="61.0" layoutY="69.0" />
+						<Button fx:id="btnSearchConcertNo" layoutX="8.0" layoutY="124.0" mnemonicParsing="false" onAction="#searchByConcertNo" style="-fx-background-color: #CCC7CF;" text="Search By Concert No">
+							<font>
+								<Font name="System Bold" size="12.0" />
+							</font>
+						</Button>
+						<Button fx:id="btnMakeAvail" layoutX="140.0" layoutY="124.0" mnemonicParsing="false" onAction="#makeAvailableTicket" prefHeight="23.0" prefWidth="135.0" style="-fx-background-color: #CCC7CF;" text="Make Tickets Available">
+							<font>
+								<Font name="System Bold" size="12.0" />
+							</font>
+						</Button>
+						<Label fx:id="lblSearch" ellipsisString="" layoutX="40.0" layoutY="14.0" prefHeight="43.0" prefWidth="225.0" text="Enter Concert No and You can also make tickets available or Drop Concert&#10;" wrapText="true" />
+                  <Button fx:id="btndropconcert" layoutX="82.0" layoutY="150.0" mnemonicParsing="false" onAction="#DropByConcertNo" prefHeight="26.0" prefWidth="117.0" text="Remove Concert" />
+
+					</children>
+				</Pane>
+
+
+				<Button layoutX="577.0" layoutY="10.0" mnemonicParsing="false" onAction="#onAvailableTickets" prefHeight="20.0" prefWidth="128.0" style="-fx-background-color: #CCC7CF;" text="Available Tickets">
+					<font>
+						<Font name="System Bold" size="14.0" />
+					</font>
+				</Button>
+				<Button layoutX="29.0" layoutY="465.0" mnemonicParsing="false" onAction="#onBackBtn" style="-fx-background-color: #CCC7CF;" text="Back">
+					<font>
+						<Font name="System Bold" size="13.0" />
+					</font>
+				</Button>
+				<Button layoutX="752.0" layoutY="465.0" mnemonicParsing="false" onAction="#onExitBtn" prefHeight="26.0" prefWidth="128.0" style="-fx-background-color: #ccc7cf;" text="EXIT APPLICATION">
+					<font>
+						<Font name="System Bold" size="13.0" />
+					</font>
+				</Button>
+
+			</children>
+		</AnchorPane>
+	</children>
+</StackPane>
